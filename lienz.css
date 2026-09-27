@@ -545,6 +545,8 @@ body #ns-section-main_product .js-shipping-input{width:100%!important}
 @media(max-width:1023px){body #ns-section-main_product .shipping-calculator .input-append{grid-template-columns:minmax(0,1fr) 110px!important}}
 body #ns-section-main_product .product-shipping-wrapper,body #ns-section-main_product .product-shipping-calculator{width:100%!important}
 body #ns-section-main_product .product-shipping-wrapper>*,body #ns-section-main_product .product-shipping-calculator>*{flex:1 1 100%!important;max-width:100%!important}
+/* Mensagem para clientes ("Pedimos CPF…"): fica no carrinho e no checkout, sai da página de produto (artefato; decisão dele 27/09) */
+body #ns-section-main_product .shipping-emergency-container{display:none!important}
 
 /* ===== v6: institucionais ===== */
 /* Como formulamos: cada arte na proporção do desenho (27/09) — nada cortado no objeto */
