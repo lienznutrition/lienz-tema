@@ -240,3 +240,58 @@ body .section-rich-text{border-bottom:0;margin-top:96px}
 body #ns-section-product-list_1789324669869 .js-item-name{font-size:26px!important;text-align:left!important;padding:0 20px!important}
 body #ns-section-product-list_1789324669869 .product-item-link{text-align:left!important}
 }
+/* botao da 1a dobra: dourado (decisao de 26/09) */
+#ns-section-slideshow .media-content a.btn{background:#DBBF80!important;color:#080E35!important;border:0!important;border-radius:999px;min-height:52px;display:flex;align-items:center;justify-content:center;font:600 16px/1.2 "Space Grotesk",Arial,sans-serif;text-transform:none;letter-spacing:0;margin-top:24px;width:100%}
+@media(min-width:1024px){#ns-section-slideshow .media-content a.btn{width:auto!important;align-self:flex-start;padding:0 32px}}
+/* ===== v3 · descricao de produto no padrao do site ideal (27/09) ===== */
+#ns-section-main_product .product-description-heading{font:600 15px/1.2 "Space Grotesk",Arial,sans-serif!important;letter-spacing:.14em;text-transform:uppercase;color:#6F5E36}
+.lz-degraus{display:flex;flex-direction:column;gap:12px;margin:24px 0 8px;max-width:620px}
+.product-description-content a.lz-degrau{position:relative;display:grid;grid-template-columns:22px 1fr auto;gap:12px;align-items:center;padding:16px;border:1px solid #D8D0C0;border-radius:14px;background:#F9F6F1;color:#080E35;text-decoration:none}
+.lz-degrau--atual{border:2px solid #080E35!important}
+.lz-degrau__radio{width:18px;height:18px;border-radius:50%;border:1.5px solid #8F7945;background:#fff}
+.lz-degrau--atual .lz-degrau__radio{border:5px solid #080E35}
+.lz-degrau__tag{position:absolute;top:-11px;left:14px;height:22px;display:inline-flex;align-items:center;padding:0 10px;border-radius:999px;background:#DBBF80;color:#080E35;font:600 11px/1 "Space Grotesk",Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.lz-degrau__nome{font:600 17px/1.3 "Space Grotesk",Arial,sans-serif}
+.lz-degrau__sub,.lz-degrau__pix,.lz-degrau__parc{display:block;font-size:13px;font-weight:400;color:#69604F}
+.lz-degrau__pix{color:#6F5E36;font-weight:600}
+.lz-degrau__preco{text-align:right;font:700 18px/1.3 "Space Grotesk",Arial,sans-serif}
+.lz-bloco2{margin:64px 0 0;max-width:720px}
+.product-description-content .lz-bloco2 h2{font:600 30px/1.15 "Playfair Display",Georgia,serif;color:#080E35;margin:0 0 16px}
+.product-description-content .lz-bloco2 p{font-size:17px;line-height:1.6;margin:0 0 16px}
+.lz-barra{display:flex;flex-direction:column;gap:16px;margin:64px 0 0;padding:24px;border:1px solid #D8D0C0;border-radius:16px;background:#F9F6F1}
+.product-description-content .lz-barra p{margin:0}
+.lz-barra__sel{font-size:14px;color:#69604F}
+.lz-barra__sel a{color:#080E35;margin-left:8px}
+.lz-barra__preco{font:700 30px/1.2 "Space Grotesk",Arial,sans-serif;color:#080E35}
+.lz-barra__parc{font-size:15px;color:#69604F}
+.lz-outros{margin:64px 0 0}
+.product-description-content .lz-outros h2{font:600 30px/1.15 "Playfair Display",Georgia,serif;color:#080E35;margin:8px 0 24px}
+.lz-outros .lz-rotulo{font:600 13px/1.2 "Space Grotesk",Arial,sans-serif!important;letter-spacing:.14em;text-transform:uppercase;color:#6F5E36}
+.lz-outros__grade{display:grid;grid-template-columns:1fr;gap:16px}
+.product-description-content a.lz-outro{display:flex;flex-direction:column;padding:16px;border:1px solid #E4DCCF;border-radius:16px;background:#F9F6F1;color:#080E35;text-decoration:none}
+.lz-outro__foto{display:flex;align-items:center;justify-content:center;height:180px;background:#EEE9DF;border-radius:12px;margin-bottom:16px}
+.lz-outro__foto img{max-height:150px!important;width:auto!important;mix-blend-mode:multiply;margin:0!important}
+.lz-outro__nome{font:600 22px/1.1 "Playfair Display",Georgia,serif;text-transform:uppercase;letter-spacing:.02em}
+.lz-outro__estado{font-size:15px;margin:6px 0 12px}
+.lz-outro__preco{font-size:13px;color:#69604F;margin:auto 0 12px}
+.lz-outro__preco strong{color:#080E35}
+.lz-outro .lz-btn,.lz-barra .lz-btn{display:flex!important;align-items:center;justify-content:center;min-height:48px;border-radius:999px;background:#080E35!important;color:#F2ECE1!important;font:600 15px/1.2 "Space Grotesk",Arial,sans-serif;text-decoration:none;width:100%}
+.product-description-content .lz-outros>p{margin:24px 0 0;max-width:720px;font-size:17px}
+.product-description-content .lz-legal2{margin:48px 0 0;font-size:13px;color:#4A4F68}
+@media(min-width:1024px){
+.lz-barra{flex-direction:row;align-items:center;justify-content:space-between;padding:24px 32px}
+.lz-barra .lz-btn{width:auto;min-width:220px;padding:0 32px}
+.lz-outros__grade{grid-template-columns:repeat(3,1fr);gap:24px}
+.product-description-content .lz-bloco2 h2,.product-description-content .lz-outros h2{font-size:40px}
+}
+/* recolhiveis como no artefato: linha, + a direita, respiro */
+.product-description-content .lz-recolhiveis{margin:56px 0 0}
+.product-description-content details.lz-recolhivel{border-top:1px solid rgba(8,14,53,.14);margin:0}
+.product-description-content details.lz-recolhivel:last-child{border-bottom:1px solid rgba(8,14,53,.14)}
+.product-description-content summary.lz-recolhivel__cabeca{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:26px 0;font-weight:600;font-size:16px;color:#080E35;cursor:pointer}
+.product-description-content summary.lz-recolhivel__cabeca::-webkit-details-marker{display:none}
+.product-description-content summary.lz-recolhivel__cabeca::after{content:"+";color:#A8894A;font-size:22px;font-weight:400;line-height:1}
+.product-description-content details[open]>summary.lz-recolhivel__cabeca::after{content:"\2212"}
+.product-description-content .lz-recolhivel__corpo{padding:0 0 28px}
+.product-description-content .lz-bloco2 h2{max-width:560px}
+#ns-section-main_product .product-description-content summary.lz-recolhivel__cabeca{height:auto;min-height:56px;padding:17px 0;line-height:1.4}
