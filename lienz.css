@@ -651,3 +651,66 @@ body .user-content .lz2 .lz2-cartao p{font-size:16px!important;line-height:1.6!i
 }
 #ns-section-custom_1790528994048 .group-block:first-child .heading-block{margin:10px 0 4px!important}
 #ns-section-custom_1790529647220 .heading-block{margin:10px 0 4px!important}
+/* ===== v7 (27/09): ajustes da conferência geral contra o artefato ===== */
+/* Home: ordem dos cartões = RELAZ, HARMONIZ, VITALIZ, COGNEZ */
+body .section-product-list .js-product-container:has(a[href*="/produtos/relaz"]){order:1}
+body .section-product-list .js-product-container:has(a[href*="/produtos/harmoniz"]){order:2}
+body .section-product-list .js-product-container:has(a[href*="/produtos/vitaliz"]){order:3}
+body .section-product-list .js-product-container:has(a[href*="/produtos/cognez"]){order:4}
+@media(min-width:1024px){
+body .section-product-list .product-item-image-container{margin:0 0 14px!important}
+body .section-product-list .product-item-link::after{margin:14px 20px 0!important}
+body #ns-section-product-list_1789324669869 .js-products-list-slider-container{margin-top:-24px}
+body [id^=ns-section-icon-text]{padding-top:8px!important}
+}
+@media(max-width:1023px){
+body #ns-section-product-list_1789324669869 .js-item-name{text-align:left!important;padding:0 22px!important;font-size:28px!important}
+body #ns-section-product-list_1789324669869 .product-item-link::after{width:calc(100% - 44px)!important;box-sizing:border-box!important;display:flex!important;justify-content:center!important;align-self:auto!important;margin:16px 22px 0!important}
+body #ns-section-product-list_1789324669869 .container{padding-top:40px!important}
+body [id^=ns-section-icon-text]{padding-top:8px!important}
+/* Produtos no celular: foto maior, preço e parcela na mesma linha */
+body .user-content .lz2 .lz2-prod .lz2-foto{height:280px!important;background:#fff!important}
+body .user-content .lz2 .lz2-prod .lz2-foto img{height:240px!important;max-height:none!important;width:auto!important}
+body .user-content .lz2 .lz2-prod__preco{display:inline;margin:auto 0 0!important}
+body .user-content .lz2 .lz2-prod__parc{display:inline;margin:0!important}
+body .user-content .lz2 .lz2-prod__parc::before{content:" · "}
+body .lz2-prod .lz2-btn{margin-top:20px}
+}
+/* Produto: sem os ícones de compartilhar (o artefato não tem) */
+body #ns-section-main_product .social-share,body #ns-section-main_product [class*=social-share],body .product-share{display:none!important}
+/* Blog: seção dos guias mais compacta, como no artefato */
+@media(min-width:1024px){
+#ns-section-custom_1790528994048 .section-custom{padding-top:64px!important}
+#ns-section-custom_1790528994048 .custom-section-content>.group-block:nth-child(2)::before{min-height:300px}
+#ns-section-custom_1790528994048 .custom-section-content>.group-block:not(:first-child):not(:nth-child(2))>.group-content{padding:12px 16px 14px!important}
+#ns-section-custom_1790528994048 .btn{margin-top:6px!important}
+#ns-section-custom_1790529647220 .section-custom{padding-top:40px!important}
+}
+/* Blog: o respiro de 96 px das seções da Home não vale aqui (cada seção do blog já tem o seu) */
+body #ns-section-custom_1790528994048,body #ns-section-custom_1790529647220,body #ns-section-custom_1790528864848{padding-top:0!important}
+#ns-section-custom_1790528994048 .group-block:first-child .text-content,#ns-section-custom_1790529647220 .text-content{padding-top:0!important}
+@media(max-width:1023px){
+body #ns-section-product-list_1789324669869 .product-item-link{display:flex!important;flex-direction:column!important;width:100%!important;align-items:stretch!important}
+body #ns-section-product-list_1789324669869 .product-item-link::after{width:auto!important;margin:16px 22px 0!important}
+body .lz2-prod__corpo{display:block!important}
+}
+/* Home: "Troca em 7 dias" com a seta circular do conjunto aprovado em 24/09 (o tema só tem a seta de devolução) */
+body [id^=ns-section-icon-text] .swiper-slide:nth-child(4) .icon-text-item-icon svg{visibility:hidden}
+body [id^=ns-section-icon-text] .swiper-slide:nth-child(4) .icon-text-item-icon{position:relative}
+body [id^=ns-section-icon-text] .swiper-slide:nth-child(4) .icon-text-item-icon::after{content:"";position:absolute;left:50%;top:50%;width:20px;height:20px;transform:translate(-50%,-50%);background:#8F7945;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.5'%3E%3Cpath d='M21 12a9 9 0 1 1-2.64-6.36L21 8'/%3E%3Cpath d='M21 3v5h-5'/%3E%3C/svg%3E")
+ center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.5'%3E%3Cpath d='M21 12a9 9 0 1 1-2.64-6.36L21 8'/%3E%3Cpath d='M21 3v5h-5'/%3E%3C/svg%3E")
+ center/contain no-repeat}
+/* v8 27/09 — o editor da descricao apaga span vazio: o botao de opcao dos degraus vira pseudo-elemento */
+body #lz-degraus .lz-degrau__radio{display:none!important}
+body #lz-degraus a.lz-degrau::before{content:"";grid-column:1;grid-row:1;align-self:center;box-sizing:border-box;width:22px;height:22px;border-radius:50%;border:2px solid #8D8068;background:#fff}
+body #lz-degraus a.lz-degrau.lz-degrau--atual::before{border:7px solid #080E35}
+body #lz-degraus .lz-degrau__nome{grid-column:2;grid-row:1}
+@media(max-width:1023px){body #lz-degraus a.lz-degrau::before{grid-row:1/span 2}body #lz-degraus .lz-degrau__preco{grid-row:2}}
+@media(max-width:1023px){body #ns-section-main_product .js-calculate-shipping{min-width:0!important;width:100%!important;padding:0 12px!important}}
+/* v9 27/09 — Home: o slide no celular respeita as margens */
+@media(max-width:1023px){body #ns-section-slideshow .media-visual{width:auto!important}}
+/* v9 27/09 — Referencias: o post usa .lzr, e o modelo de post limita a 680px */
+body:has(.lzr) #ns-section-heading,body:has(.lzr) .post-date{display:none!important}
+body:has(.lzr) #ns-section-blog_post_content .container-narrow{max-width:none!important;padding:0!important}
+body:has(.lzr) .blog-post-page{max-width:none!important}
+body .lzr .b-gh h3{margin:0!important}
